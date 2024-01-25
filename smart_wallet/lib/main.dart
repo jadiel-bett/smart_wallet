@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:smart_wallet/home_page.dart';
 
 void main() {
-  runApp(MyApp as Widget);
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -9,6 +10,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const MaterialApp(
+      home: HomePage(),
+    );
   }
 }
